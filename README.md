@@ -1,10 +1,4 @@
 <a id="readme-top"></a>
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
 
 <h3 align="center">Modular Optimization-based Inverse Kinematics of a UR5e Arm in Mujoco</h3>
 
@@ -13,70 +7,49 @@
     <br />
     <a href="https://github.com/kevinzakka/mjctrl"><strong>Inspired from »</strong></a>
     <br />
-    <br />
   </p>
 </div>
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+## Control Methodology
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+The end effector of the UR5e robotic arm is controlled using local optimization techniques. The control approach utilizes:
 
-Here's a blank template to get started. To avoid retyping too much info, do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`, `project_license`
+- The `scipy.minimize` library for optimization.
+- A custom gradient descent algorithm based on the Jacobian transpose method.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+### Tools involved
 
-
-
-### Built With
-
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
+* Mujoco (latest)
+* Python - scipy.optimize and numpy libraries
+* Constrained Optimization (knowledge required)
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Steps to setup the framework in your local machine.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
+Install the MuJoCo and SciPy libraries using pip to ensure the code runs without errors.
+* pip
   ```sh
-  npm install npm@latest -g
+  python3 -m pip install mujoco scipy numpy
   ```
 
 ### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+Considering that you have the prerequisites
+1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/Poorna-Sasank/mujoco_ik_simulation.git
    ```
-3. Install NPM packages
+2. Navigate to optim_kinematic_control folder
    ```sh
-   npm install
+   cd path/to/mujoco_ik_simulation/optim_kinematic_control
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-5. Change git remote url to avoid accidental pushes to base project
-   ```sh
-   git remote set-url origin github_username/repo_name
-   git remote -v # confirm the changes
-   ```
+3. Choose your desired optimization framework and run the main code :)
+   <br />
+   * You can choose your optimization framework in the main code itself
+   
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -84,15 +57,11 @@ This is an example of how to list things you need to use the software and how to
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+Should you require any further clarifications on mujoco or optimization techniques please refer to their respective documentations
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
+_For mujoco, please refer to the [Mujoco Documentation](https://mujoco.readthedocs.io/en/stable/python.html)_
+<br />
+_To learn about optimization methods, there are numerous resources available; I recommend starting with [3B1B](https://youtu.be/IHZwWFHWa-w?si=o6CwgQx7aMiLjyko)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
