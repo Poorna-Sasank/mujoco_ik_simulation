@@ -39,7 +39,7 @@
   <p align="center">
     A modular optimization framework to control the end effector of an industrial robotic arm solely based on the euclidean norm between goal pose and the actual pose of the end effector -- IK agnostic control (no need for IK equations)
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/kevinzakka/mjctrl"><strong>Inspired from »</strong></a>
     <br />
     <br />
     <a href="https://github.com/github_username/repo_name">View Demo</a>
