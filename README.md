@@ -34,10 +34,10 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">Modular Optimization-based Inverse Kinematics of a UR5e Arm in Mujoco</h3>
 
   <p align="center">
-    project_description
+    A modular optimization framework to control the end effector of an industrial robotic arm solely based on the euclidean norm between goal pose and the actual pose of the end effector -- IK agnostic control (no need for IK equations)
     <br />
     <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
     <br />
