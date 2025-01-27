@@ -21,7 +21,7 @@ The end effector of the UR5e robotic arm is controlled using local optimization 
 
 * Mujoco (latest)
 * Python - scipy.optimize and numpy libraries
-* Constrained Optimization (knowledge required)
+* Constrained Optimization
 
 <!-- GETTING STARTED -->
 ## Getting Started
