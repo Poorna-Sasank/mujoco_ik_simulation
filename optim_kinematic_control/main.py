@@ -5,7 +5,7 @@ from gradIK import GradientDescentIK
 from ik_calculator import ScipyIK
 
 # Constants
-MODEL_PATH = "C:/Users/comrade/Downloads/mujoco_menagerie-main/mujoco_menagerie-main/universal_robots_ur5e/scene.xml"
+MODEL_PATH = "path/to/mujoco_menagerie-main/mujoco_menagerie-main/universal_robots_ur5e/scene.xml"
 GOAL_POSITION = [0.49, 0.13, 0.59]
 INITIAL_JOINT_ANGLES = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
 NUM_STEPS = 10000
